@@ -1,7 +1,7 @@
 body {
   font-family: system-ui, sans-serif;
-   background: #FFB6C1; /* pastello caldo chiaro */
-  color: #778899;
+ background: #FFB6C1; /* pastello caldo chiaro */
+  color: #778899;;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +23,12 @@ body {
   line-height: 1.4;
   margin-bottom: 30px;
   word-wrap: break-word;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.fade-out {
+  opacity: 0;
 }
 
 button {
@@ -36,7 +42,7 @@ button {
   background: #FFC0CB; /* azzurro pastello */
   color: #0F172A;
   font-weight: bold;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease;
   touch-action: manipulation;
 }
 
