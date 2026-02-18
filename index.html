@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunicazione Alternativa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <div id="frase">Sapevo dall’inizio che non sarebbe stato semplice.</div>
+    <button id="risposta" onclick="avanza()">Ok.</button>
+  </div>
+
+   <script>
+  const contenuti = [
+    { frase: "Sapevo dall’inizio che non sarebbe stato semplice.", risposta: "Ok." },
+    { frase: "Qualcosa nel tuo modo mi colpisce.", risposta: "Ci sta." },
+    { frase: "È vero: la comunicazione potrebbe non essere semplice.", risposta: "Succede, però ti assicuro che è l'inizio" },
+    { frase: "Con tutta questa timidezza poi…", risposta: "E vabbè." },
+    { frase: "Ci sono mille modi per comunicare.", risposta: "E io scelgo i più complicati" },
+    { frase: "Potrei avere qualche difetto.", risposta: "Ma questo non è certo" },
+    { frase: "Se una cosa mi interessa però mi impegno", risposta: "Non so se si nota" },
+    { frase: "Non è facile e non lo sarà.", risposta: "Ovviamente" },
+    { frase: "Sento di doverci provare fino in fondo", risposta: "Non per quello che già è" },
+    { frase: "Ma per la sensazione che ho di te dall'inizio", risposta: "Sarò scema" },
+    { frase: "Potevo "osare" di più.", risposta: "E se me ne darai modo, lo farò" }
+  ];
+
+  let indice = 0;
+
+  function avanza() {
+    indice = (indice + 1) % contenuti.length;
+    document.getElementById("frase").innerText = contenuti[indice].frase;
+    document.getElementById("risposta").innerText = contenuti[indice].risposta;
+  }
+</script>
+</body>
+</html>
