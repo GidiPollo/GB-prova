@@ -1,7 +1,7 @@
 body {
   font-family: system-ui, sans-serif;
-  background: #FFB6C1; /* pastello caldo chiaro */
-  color: #778899;     /* testo pastello lilla */
+   background: #FFB6C1; /* pastello caldo chiaro */
+  color: #778899;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,10 +34,10 @@ button {
   border: none;
   cursor: pointer;
   background: #FFC0CB; /* azzurro pastello */
-  color: #0F172A;      /* testo scuro contrastato */
+  color: #0F172A;
   font-weight: bold;
   transition: transform 0.2s ease;
-  touch-action: manipulation; /* migliora il riconoscimento touch */
+  touch-action: manipulation;
 }
 
 button:active {
